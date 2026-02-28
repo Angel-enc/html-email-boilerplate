@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Profesional - TBWA Candidatura</title>
+    <style>
+        /* RESET ESTÁNDAR DE EMAIL */
+        body,
+        table,
+        td,
+        a {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        table,
+        td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+            border-collapse: collapse !important;
+        }
+
+        img {
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+            -ms-interpolation-mode: bicubic;
+        }
+
+        body {
+            height: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 100% !important;
+            background-color: #f8f9fa;
+        }
+
+        /* ESTILOS DE DISEÑO */
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #f4f4f4;
+        }
+
+        .content {
+            padding: 40px;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: #333333;
+            line-height: 1.6;
+        }
+
+        .btn-link {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Media query sencilla para móviles */
+        @media screen and (max-width: 600px) {
+            .content {
+                padding: 20px !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <table role="presentation" class="container" cellspacing="0" cellpadding="0" border="0">
+            <tr>
+                <td style="padding: 0; text-align: center; background-color: #000000;">
+                    <img src="img/mara-f--KkCYytNb1s-unsplash.jpg" alt="Logo" width="600"
+                        style="display: block; width: 100%; max-width: 600px; height: auto; border: 0;" />
+                </td>
+            </tr>
+            <tr>
+                <td class="content">
+                    %%[
+                    VAR @nombre
+                    SET @nombre = AttributeValue("FirstName")
+                    IF EMPTY(@nombre) THEN
+                    SET @nombre = "yo mismo"
+                    ENDIF
+                    ]%%
+
+                    <h1 style="font-size: 24px; margin-top: 0; color: #111111">Hola, %%=v(@nombre)=%%.</h1>
+                    <p>Este es un ejemplo de maquetación robusta. He utilizado una estructura de <strong>tablas
+                            anidadas</strong> y un flujo de trabajo profesional para asegurar la compatibilidad en
+                        clientes críticos como Outlook Salesforce Marketing Cloud.</p>
+                    <p>Además, mi reciente formación en <strong>MuleSoft</strong> me premite entender la arquitectura de
+                        datos que alimenta estas campañas personalizadas</p>
+
+                    <div style="text-align: center; padding-top: 30px;">
+                        <!--[if mso]>
+                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="#" style="height:45px;v-text-anchor:middle;width:200px;" arcsize="10%" stroke="f" fillcolor="#007bff">
+                            <w:anchorlock/>
+                            <center style="color:#ffffff;font-family:sans-serif;font-size:16px;font-weight:bold;">
+                                Ver proyecto
+                            </center>
+                        </v:roundrect>
+                        <![endif]-->
+                        <!--[if !mso]><!-- -->
+                        <a href="#" style="background-color:#007bff; border-radius:5px; color:#ffffff; display:inline-block; font-family: sans-serif; font-size:16px; font-weight: bold; line-height: 45px; text-align:center; text-decoration:none; width:200px; -webkit-text-size-adjust: none;">Ver proyecto</a>
+                        <!--<![endif]-->
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td
+                    style="padding: 30px; text-align: center; font-size: 12px; color: #999999; background-color: #f4f4f4;">
+                    &copy; 2026 | Maquetación para Email Marketing | TBWA-DDB Candidatura
+                </td>
+            </tr>
+        </table>
+    </center>
+</body>
+
+</html>
