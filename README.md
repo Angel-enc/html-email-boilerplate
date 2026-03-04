@@ -1,4 +1,4 @@
-# Mi Primer Proyecto: Email Developmetn & Salesforce Marketing Cloud
+# Mi Primer Proyecto: Email Development & Salesforce Marketing Cloud
 
 Este es mi primer proyecto práctico de maquetación de emails profesionales. Está diseñado en el ecosistema de **Salesforce Marketing Cloud (SFMC)**, enfocado en aprender cómo enviar correos que se vean bien en cualquier lugar.
 
