@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Email Profesional - TBWA Candidatura</title>
+    <title>Master Template - Email Marketing & CRM</title>
     <style>
         /* RESET ESTÁNDAR DE EMAIL */
         body,
@@ -84,16 +84,14 @@
                     VAR @nombre
                     SET @nombre = AttributeValue("FirstName")
                     IF EMPTY(@nombre) THEN
-                    SET @nombre = "yo mismo"
+                    SET @nombre = "cliente"
                     ENDIF
                     ]%%
 
                     <h1 style="font-size: 24px; margin-top: 0; color: #111111">Hola, %%=v(@nombre)=%%.</h1>
-                    <p>Este es un ejemplo de maquetación robusta. He utilizado una estructura de <strong>tablas
-                            anidadas</strong> y un flujo de trabajo profesional para asegurar la compatibilidad en
-                        clientes críticos como Outlook Salesforce Marketing Cloud.</p>
-                    <p>Además, mi reciente formación en <strong>MuleSoft</strong> me premite entender la arquitectura de
-                        datos que alimenta estas campañas personalizadas</p>
+                    <p>Esta es una demostración de una <strong>arquitectura de email profesional. </strong> La estructura está basada en tablas anidadas, garantizando un renderizado óptimo en clientes complejos como <strong>Outlook</strong> y plataformas como <strong>Salesforce Marketing Cloud</strong>.</p>
+                    
+                    <p>Mi enfoque combina desarrollo técnico con una sólida  comprensión de la arquitectura de datos <strong>MuleSoft</strong>, permitiendo crear campañas personalizadas y escalables.</p>
 
                     <div style="text-align: center; padding-top: 30px;">
                         <!--[if mso]>
@@ -114,7 +112,7 @@
             <tr>
                 <td
                     style="padding: 30px; text-align: center; font-size: 12px; color: #999999; background-color: #f4f4f4;">
-                    &copy; 2026 | Maquetación para Email Marketing | TBWA-DDB Candidatura
+                    &copy; 2026 | Especialista en Email Marketing & CRM Data | <a href="#" style="color: #999999; text-decoration: underline;">Política de privacidad</a>
                 </td>
             </tr>
         </table>
